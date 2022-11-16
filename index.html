@@ -8,6 +8,37 @@
     <title>Document</title>
 </head>
 <body>
+    <h1 id="title">Silence Survay</h1>
+    <p id="description">Thanks for cheking my study exercises</p>
+    <form id="survay-form">
+        <label for="name" id="name-label">Name: <input placeholder="Enter Name" type="text" required id="name" name="name"></label>
+        <label for="email" id="email-label">Email: <input placeholder="Enter Email" type="email" required id="email" name="email"></label>
+        <label for="number" id="number-label">Number: <input placeholder="Enter Number" type="number" required id="number" min="12" max="120" name="number"></label>
+        <label for="dropdown">
+            <select name="dropdown" id="dropdown">
+                <option value="">Which role best describes you?</option>
+                <option value="1">Student</option>
+                <option value="">Full Time Job</option>
+            </select>
+        </label>
+        <p>Would you recommend this to a friend?</p>
+        <label for="yes">
+            <input type="radio" id="yes" name="recommend"> Yes
+        </label>
+        <label for="no">
+            <input type="radio" id="no" name="recommend"> No
+        </label>
+        <hr>
+        <label for="check">
+            <input type="checkbox" id="check" name="check"> One
+        </label>
+        <label for="check">
+            <input type="checkbox" id="check" name="check"> Two
+        </label>
+        <label for="check">
+            <input type="checkbox" id="check" name="check"> Three
+        </label>
+    </form>
     
 </body>
 </html> 
