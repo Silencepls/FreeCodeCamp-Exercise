@@ -8,9 +8,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="title">Silence Survay</h1>
+    <h1 id="title">Silence Survey</h1>
     <p id="description">Thanks for cheking my study exercises</p>
-    <form id="survay-form">
+    <form id="survey-form">
         <label for="name" id="name-label">Name: <input placeholder="Enter Name" type="text" required id="name" name="name"></label>
         <label for="email" id="email-label">Email: <input placeholder="Enter Email" type="email" required id="email" name="email"></label>
         <label for="number" id="number-label">Number: <input placeholder="Enter Number" type="number" required id="number" min="12" max="120" name="number"></label>
@@ -23,21 +23,27 @@
         </label>
         <p>Would you recommend this to a friend?</p>
         <label for="yes">
-            <input type="radio" id="yes" name="recommend"> Yes
+            <input type="radio" id="yes" value="value" name="recommend"> Yes
         </label>
         <label for="no">
-            <input type="radio" id="no" name="recommend"> No
+            <input type="radio" id="no" value="value" name="recommend"> No
         </label>
         <hr>
         <label for="check">
-            <input type="checkbox" id="check" name="check"> One
+            <input type="checkbox" value="value" id="check" name="check"> One
         </label>
         <label for="check">
-            <input type="checkbox" id="check" name="check"> Two
+            <input type="checkbox" value="value" id="check" name="check"> Two
         </label>
         <label for="check">
-            <input type="checkbox" id="check" name="check"> Three
+            <input type="checkbox" value="value" id="check" name="check"> Three
         </label>
+        <hr>
+        <label for="bio">Provide a bio:
+            <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+        </label>
+        <hr>
+        <input type="submit" value="Submit" id="submit" />
     </form>
     
 </body>
